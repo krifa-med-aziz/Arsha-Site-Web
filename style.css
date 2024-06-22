@@ -1,0 +1,88 @@
+header .navbar {
+  background-color: #37517e;
+}
+
+main .landing-page {
+  background-color: #37517e;
+  color: white;
+}
+.container .row p:nth-of-type(1) {
+  font-size: 48px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.container .row p:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.705);
+  line-height: 1.2;
+}
+.navbar a {
+  color: rgba(255, 255, 255, 0.905);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.navbar ul li a:hover {
+  color: rgb(71, 178, 228);
+}
+.nabvar a:hover {
+  color: rgb(71, 178, 228);
+  transition: 0.3s;
+}
+.container .navbar-brand {
+  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.905);
+  font-size: 30px;
+  font-weight: 500;
+}
+.landing-page .container .row a:nth-of-type(1) {
+  font-family: "Jost", sans-serif;
+  background-color: rgb(71, 178, 228);
+  font-weight: 500;
+  border-color: transparent;
+}
+.landing-page .container .row a:nth-of-type(2) {
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+}
+.d-flex button {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(71, 178, 228);
+  font-weight: 400;
+  border-color: transparent;
+}
+.d-flex button:hover,
+.landing-page .container .row a:nth-of-type(1):hover,
+.landing-page .container .row a:nth-of-type(2):hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.d-flex button:hover {
+  background-color: rgb(71, 178, 228);
+  border-color: transparent;
+}
+.landing-page .container .row a:nth-of-type(2):hover {
+  color: rgb(71, 178, 228);
+}
+.navbar .dropdown-menu li a {
+  color: rgba(0, 0, 0, 0.653);
+}
+main .landing-page .row .img {
+  animation: MoveUpDown 5s infinite;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

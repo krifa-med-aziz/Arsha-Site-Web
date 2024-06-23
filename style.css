@@ -86,3 +86,119 @@ main .landing-page .row .img {
     transform: translateY(0);
   }
 }
+.container .row .col-6 img {
+  width: 100px;
+  filter: grayscale(100%);
+  margin-bottom: 20px;
+}
+.container .row .col-6 img:hover {
+  filter: none;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+main .section1 {
+  background-color: #f5f6f8;
+}
+.section2 .container .row .col-12 p {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  line-height: 24px;
+}
+.section2 .container .row .col-12 p:nth-of-type(2),
+.section2 .container .row .col-12 p:nth-of-type(3),
+.section2 .container .row .col-12 p:nth-of-type(4) {
+  line-height: normal;
+}
+.section2 .container h1 {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+.section2 .container h1::after {
+  content: "";
+  bottom: 0;
+  width: 150px;
+  height: 0.5px;
+  background-color: rgba(97, 97, 97, 0.692);
+  position: absolute;
+  transform: translate(-155px, 10px);
+  z-index: 1;
+}
+.section2 .container h1::before {
+  content: "";
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: rgb(71, 178, 228);
+  position: absolute;
+  transform: translate(55px, 380%);
+  z-index: 2;
+}
+.section2 .container .row .col-12 p i {
+  color: rgb(71, 178, 228);
+}
+.section2 .container .row .col-12 .btn {
+  color: rgb(71, 178, 228);
+  border: solid 2px rgb(71, 178, 228);
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.section2 .container .row .col-12 a i:hover {
+  animation: MoveRight 2s;
+}
+.section2 .container .row .col-12 .btn:hover {
+  background-color: rgb(71, 178, 228);
+  color: white;
+}
+@keyframes MoveRight {
+  50% {
+    transform: translateX(50px);
+  }
+}
+main .section3 {
+  background-color: #f5f6f8;
+}
+main .section3 .container .row .col h3 {
+  color: rgb(55, 81, 126);
+  font-size: 34px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+}
+main .section3 .container .row .col .description {
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.7);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+main .section3 .container .row .col .accordion p {
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+main .section3 .container .row .col .accordion span {
+  color: rgb(71, 178, 228);
+  font-family: "Jost", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+main .section3 .container .row .col .accordion button {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+main .section3 .container .row .col .accordion-item {
+  border-color: transparent;
+}
+main .section3 .container .row .col .accordion button:active {
+  color: rgb(71, 178, 228);
+  background-color: red;
+}

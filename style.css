@@ -148,57 +148,51 @@ main .section1 {
   font-size: 16px;
   font-weight: 500;
 }
-.section2 .container .row .col-12 a i:hover {
-  animation: MoveRight 2s;
+.section2 .container .row .col-12 a .bi {
+  transition: transform 0.3s;
 }
-.section2 .container .row .col-12 .btn:hover {
+.section2 .container .row .col-12 a:hover {
   background-color: rgb(71, 178, 228);
   color: white;
 }
-@keyframes MoveRight {
-  50% {
-    transform: translateX(50px);
-  }
+.section2 .container .row .col-12 a:hover .bi {
+  transform: translateX(5px);
 }
 main .section3 {
   background-color: #f5f6f8;
 }
-main .section3 .container .row .col h3 {
+main .section3 .container .row .col-12 h3 {
   color: rgb(55, 81, 126);
   font-size: 34px;
   font-family: "Jost", sans-serif;
   font-weight: 700;
 }
-main .section3 .container .row .col .description {
+main .section3 .container .row .col-12 .description {
   color: color(srgb 0.266667 0.266667 0.266667 / 0.7);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-main .section3 .container .row .col .accordion p {
+main .section3 .container .row .col-12 .accordion p {
   color: rgb(68, 68, 68);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-main .section3 .container .row .col .accordion span {
+main .section3 .container .row .col-12 .accordion span {
   color: rgb(71, 178, 228);
   font-family: "Jost", sans-serif;
   font-size: 17px;
   font-weight: 600;
 }
-main .section3 .container .row .col .accordion button {
+main .section3 .container .row .col-12 .accordion button {
   color: rgb(55, 81, 126);
   font-family: "Jost", sans-serif;
   font-size: 17px;
   font-weight: 500;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
 }
-main .section3 .container .row .col .accordion-item {
+main .section3 .container .row .col-12 .accordion-item {
   border-color: transparent;
-}
-main .section3 .container .row .col .accordion button:active {
-  color: rgb(71, 178, 228);
-  background-color: red;
+  border-radius: 0px;
+  box-shadow: 0px 5px 25px 0px #eaebec;
 }

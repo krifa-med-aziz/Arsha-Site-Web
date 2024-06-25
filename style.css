@@ -99,6 +99,7 @@ main .landing-page .row .img {
 main .section1 {
   background-color: #f5f6f8;
 }
+.services .container p,
 .section2 .container .row .col-12 p {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
@@ -111,6 +112,7 @@ main .section1 {
 .section2 .container .row .col-12 p:nth-of-type(4) {
   line-height: normal;
 }
+.services .container h1,
 .section2 .container h1 {
   color: rgb(55, 81, 126);
   font-family: "Jost", sans-serif;
@@ -118,16 +120,18 @@ main .section1 {
   font-weight: 700;
   position: relative;
 }
+.services .container h1::after,
 .section2 .container h1::after {
   content: "";
   bottom: 0;
-  width: 150px;
+  width: 160px;
   height: 0.5px;
   background-color: rgba(97, 97, 97, 0.692);
   position: absolute;
   transform: translate(-155px, 10px);
   z-index: 1;
 }
+.services .container h1::before,
 .section2 .container h1::before {
   content: "";
   bottom: 0;
@@ -135,8 +139,11 @@ main .section1 {
   height: 3px;
   background-color: rgb(71, 178, 228);
   position: absolute;
-  transform: translate(55px, 380%);
+  transform: translate(60px, 380%);
   z-index: 2;
+}
+.services .container h1::before {
+  transform: translate(55px, 380%);
 }
 .section2 .container .row .col-12 p i {
   color: rgb(71, 178, 228);
@@ -195,4 +202,72 @@ main .section3 .container .row .col-12 .accordion-item {
   border-color: transparent;
   border-radius: 0px;
   box-shadow: 0px 5px 25px 0px #eaebec;
+}
+.skills .container .row .col h3 {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.skills .container .row .col p {
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.7);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.skills .container .row .col .row .col {
+  color: rgb(68, 68, 68);
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.skills .container .row .col .progress {
+  border-radius: 0px;
+  height: 10px;
+}
+.skills .container .row .col #bar-2 {
+  width: 90%;
+}
+.skills .container .row .col #bar-4 {
+  width: 55%;
+}
+.services .container .row .col-lg-2 .progress-bar {
+  background-color: rgb(55, 81, 126);
+  height: 10px;
+}
+.services {
+  background-color: #f5f6f8;
+}
+.services .container .row .col-lg-2 i {
+  color: rgb(71, 178, 228);
+  font-size: 36px;
+}
+.services .container .row .col-lg-2 {
+  box-shadow: 0px 5px 25px 0px #eaebec;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.services .container .row .col-lg-2 a {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+}
+.services .container .row .col-lg-2 p {
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.services .container .row .col-lg-2:hover a {
+  color: rgb(71, 178, 228);
+  transition: 0.3s;
+}
+.services .container .row .col-lg-2:hover {
+  transform: translateY(-10px);
+  transition: 0.6s;
 }

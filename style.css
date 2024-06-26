@@ -99,6 +99,11 @@ main .landing-page .row .img {
 main .section1 {
   background-color: #f5f6f8;
 }
+/*--------------------------------------------------------------
+# Section2
+--------------------------------------------------------------*/
+.Team .container p,
+.portfolio .container p,
 .services .container p,
 .section2 .container .row .col-12 p {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
@@ -112,6 +117,8 @@ main .section1 {
 .section2 .container .row .col-12 p:nth-of-type(4) {
   line-height: normal;
 }
+.Team .container h2,
+.portfolio .container h2,
 .services .container h1,
 .section2 .container h1 {
   color: rgb(55, 81, 126);
@@ -120,6 +127,8 @@ main .section1 {
   font-weight: 700;
   position: relative;
 }
+.Team .container h2::after,
+.portfolio .container h2::after,
 .services .container h1::after,
 .section2 .container h1::after {
   content: "";
@@ -131,6 +140,8 @@ main .section1 {
   transform: translate(-155px, 10px);
   z-index: 1;
 }
+.Team .container h2::before,
+.portfolio .container h2::before,
 .services .container h1::before,
 .section2 .container h1::before {
   content: "";
@@ -165,6 +176,9 @@ main .section1 {
 .section2 .container .row .col-12 a:hover .bi {
   transform: translateX(5px);
 }
+/*--------------------------------------------------------------
+# Section3 
+--------------------------------------------------------------*/
 main .section3 {
   background-color: #f5f6f8;
 }
@@ -203,6 +217,9 @@ main .section3 .container .row .col-12 .accordion-item {
   border-radius: 0px;
   box-shadow: 0px 5px 25px 0px #eaebec;
 }
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
 .skills .container .row .col h3 {
   color: rgb(55, 81, 126);
   font-family: "Jost", sans-serif;
@@ -225,30 +242,35 @@ main .section3 .container .row .col-12 .accordion-item {
   border-radius: 0px;
   height: 10px;
 }
+.skills .container .row .col .progress-bar {
+  background-color: rgb(55, 81, 126);
+}
 .skills .container .row .col #bar-2 {
   width: 90%;
 }
 .skills .container .row .col #bar-4 {
   width: 55%;
 }
-.services .container .row .col-lg-2 .progress-bar {
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .container .row .col-12 .progress-bar {
   background-color: rgb(55, 81, 126);
   height: 10px;
 }
 .services {
   background-color: #f5f6f8;
 }
-.services .container .row .col-lg-2 i {
+.services .container .row .col-12 i {
   color: rgb(71, 178, 228);
   font-size: 36px;
 }
-.services .container .row .col-lg-2 {
+.services .container .row .col-12 {
   box-shadow: 0px 5px 25px 0px #eaebec;
   background-color: white;
-  cursor: pointer;
   transition: 0.6s;
 }
-.services .container .row .col-lg-2 a {
+.services .container .row .col-12 a {
   color: rgb(55, 81, 126);
   font-family: "Jost", sans-serif;
   font-size: 20px;
@@ -256,18 +278,105 @@ main .section3 .container .row .col-12 .accordion-item {
   text-decoration: none;
   display: block;
 }
-.services .container .row .col-lg-2 p {
+.services .container .row .col-12 p {
   color: rgb(68, 68, 68);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
 }
-.services .container .row .col-lg-2:hover a {
+.services .container .row .col-12:hover a {
   color: rgb(71, 178, 228);
   transition: 0.3s;
 }
-.services .container .row .col-lg-2:hover {
+.services .container .row .col-12:hover {
   transform: translateY(-10px);
   transition: 0.6s;
+}
+/*--------------------------------------------------------------
+# call to action section
+--------------------------------------------------------------*/
+.call-to-action {
+  padding: 120px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+.call-to-action img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.call-to-action::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.603);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.call-to-action .container .row {
+  padding: 0 12px;
+}
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+.call-to-action .container .row .col-xl-9 h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Jost", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.call-to-action .container .row .col-xl-9 p {
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.call-to-action .container .row .col-xl-3 {
+  padding: 0 12px;
+}
+.call-to-action .container .row .col-xl-3 a {
+  text-decoration: none;
+  padding: 12px 40px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: solid 2px white;
+  border-radius: 50px;
+  color: white;
+  margin: 10px;
+}
+.call-to-action .container .row .col-xl-3 a:hover {
+  background-color: rgb(71, 178, 228);
+  border-color: transparent;
+  transition: 0.8s;
+}
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .container h2::after {
+  content: "";
+  bottom: 0;
+  width: 180px;
+  height: 0.5px;
+  background-color: rgba(97, 97, 97, 0.692);
+  position: absolute;
+  transform: translate(-180px, 10px);
+  z-index: 1;
+}
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.Team .container h2::after {
+  width: 140px;
+  transform: translate(-110px, 10px);
+}
+.Team .container h2::before {
+  transform: translate(25px, 380%);
 }

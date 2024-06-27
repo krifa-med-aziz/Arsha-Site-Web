@@ -108,6 +108,7 @@ main .section1 {
 /*--------------------------------------------------------------
 # Section2
 --------------------------------------------------------------*/
+.Testimonials .container p,
 .Pricing .container p,
 .Team .container p,
 .portfolio .container p,
@@ -124,6 +125,7 @@ main .section1 {
 .section2 .container .row .col-12 p:nth-of-type(4) {
   line-height: normal;
 }
+.Testimonials .container h2,
 .Pricing .container h2,
 .Team .container h2,
 .portfolio .container h2,
@@ -136,6 +138,7 @@ main .section1 {
   position: relative;
   padding-bottom: 5px;
 }
+.Testimonials .container h2:after,
 .Pricing .container h2:after,
 .Team .container h2::after,
 .portfolio .container h2::after,
@@ -150,6 +153,7 @@ main .section1 {
   transform: translate(-160px, 10px);
   z-index: 1;
 }
+.Testimonials .container h2:before,
 .Pricing .container h2:before,
 .Team .container h2::before,
 .portfolio .container h2::before,
@@ -574,4 +578,65 @@ main .section3 .container .row .col-12 .accordion-item {
   background-color: rgb(71, 178, 228);
   color: white;
   transition: 0.4s;
+}
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.Testimonials .container h2:after {
+  width: 180px;
+  transform: translate(-180px, 10px);
+}
+.Testimonials .container .carousel-inner .carousel-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.Testimonials .container .carousel-inner .carousel-item h3 {
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0 5px 0;
+}
+.Testimonials .container .carousel-inner .carousel-item h4 {
+  margin-bottom: 15px;
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.6);
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Testimonials .container .carousel-inner .carousel-item .stars {
+  margin-bottom: 15px;
+}
+.Testimonials .container .carousel-inner .carousel-item .stars i {
+  color: rgb(255, 193, 7);
+  font-size: 16px;
+}
+.Testimonials .container .carousel-inner .carousel-item p {
+  margin: 0 116px;
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.Testimonials .container .carousel-inner .carousel-item p i {
+  color: color(srgb 0.278431 0.698039 0.894118 / 0.5);
+  font-size: 26px;
+}
+.Testimonials .container .carousel-indicators {
+  margin-top: 20px;
+  transform: translateY(60px);
+}
+.Testimonials .container .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-size: 16px;
+  background-color: rgb(71, 178, 228);
+}
+@media (max-width: 992px) {
+  .Testimonials .container .carousel-inner .carousel-item p {
+    margin: auto;
+    max-width: 90%;
+  }
 }

@@ -108,6 +108,7 @@ main .section1 {
 /*--------------------------------------------------------------
 # Section2
 --------------------------------------------------------------*/
+.FAQ .FAQ-title p,
 .Testimonials .container p,
 .Pricing .container p,
 .Team .container p,
@@ -125,6 +126,7 @@ main .section1 {
 .section2 .container .row .col-12 p:nth-of-type(4) {
   line-height: normal;
 }
+.FAQ .FAQ-title h2,
 .Testimonials .container h2,
 .Pricing .container h2,
 .Team .container h2,
@@ -138,6 +140,7 @@ main .section1 {
   position: relative;
   padding-bottom: 5px;
 }
+.FAQ .FAQ-title h2:after,
 .Testimonials .container h2:after,
 .Pricing .container h2:after,
 .Team .container h2::after,
@@ -153,6 +156,7 @@ main .section1 {
   transform: translate(-160px, 10px);
   z-index: 1;
 }
+.FAQ .FAQ-title h2:before,
 .Testimonials .container h2:before,
 .Pricing .container h2:before,
 .Team .container h2::before,
@@ -226,6 +230,7 @@ main .section3 .container .row .col-12 .accordion button {
   font-family: "Jost", sans-serif;
   font-size: 17px;
   font-weight: 500;
+  padding: 20px;
 }
 main .section3 .container .row .col-12 .accordion-item {
   border-color: transparent;
@@ -638,5 +643,53 @@ main .section3 .container .row .col-12 .accordion-item {
   .Testimonials .container .carousel-inner .carousel-item p {
     margin: auto;
     max-width: 90%;
+  }
+}
+/*--------------------------------------------------------------
+# FAQ Section
+--------------------------------------------------------------*/
+.FAQ {
+  background-color: #f5f6f8;
+}
+.FAQ .FAQ-title h2:after {
+  width: 300px;
+  transform: translate(-360px, 10px);
+}
+.FAQ .FAQ-title h2:before {
+  width: 100px;
+  transform: translate(160px, 380%);
+}
+.FAQ .container .row .col-lg-10 .faq-container .accordion-item button {
+  padding: 20px;
+}
+.FAQ .container .row .col-lg-10 .faq-container .accordion-item button i {
+  color: rgb(71, 178, 228);
+  font-size: 20px;
+  margin-right: 20px;
+}
+.FAQ .container .row .col-lg-10 .faq-container .accordion-item button h3 {
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px;
+}
+.FAQ .container .row .col-lg-10 .faq-container .accordion-item {
+  border-color: transparent;
+}
+@media (max-width: 460px) {
+  .FAQ .FAQ-title h2:after {
+    width: 100px;
+    transform: translate(-120px, 10px);
+  }
+  .FAQ .FAQ-title h2:before {
+    width: 40px;
+    transform: translate(115px, 380%);
+  }
+}
+@media (max-width: 292px) {
+  .FAQ .FAQ-title h2:before {
+    width: 40px;
+    transform: translate(65px, 380%);
   }
 }

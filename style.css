@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 header .navbar {
   background-color: #37517e;
 }
@@ -5,6 +9,7 @@ header .navbar {
 main .landing-page {
   background-color: #37517e;
   color: white;
+  cursor: default;
 }
 .container .row p:nth-of-type(1) {
   font-size: 48px;
@@ -265,11 +270,7 @@ main .section3 .container .row .col-12 .accordion-item {
   color: rgb(71, 178, 228);
   font-size: 36px;
 }
-.services .container .row .col-12 {
-  box-shadow: 0px 5px 25px 0px #eaebec;
-  background-color: white;
-  transition: 0.6s;
-}
+
 .services .container .row .col-12 a {
   color: rgb(55, 81, 126);
   font-family: "Jost", sans-serif;
@@ -278,6 +279,14 @@ main .section3 .container .row .col-12 .accordion-item {
   text-decoration: none;
   display: block;
 }
+.services .container .row .col-12 .service-info .service-item {
+  box-shadow: 0px 5px 25px 0px #eaebec;
+  background-color: white;
+  transition: 0.6s;
+}
+.services .container .row .col-12 .service-info .service-item:nth-of-type(1) {
+  height: 275px;
+}
 .services .container .row .col-12 p {
   color: rgb(68, 68, 68);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
@@ -285,11 +294,11 @@ main .section3 .container .row .col-12 .accordion-item {
   font-weight: 400;
   line-height: 1.6;
 }
-.services .container .row .col-12:hover a {
+.services .container .row .col-12 .service-info .service-item:hover a {
   color: rgb(71, 178, 228);
   transition: 0.3s;
 }
-.services .container .row .col-12:hover {
+.services .container .row .col-12 .service-info .service-item:hover {
   transform: translateY(-10px);
   transition: 0.6s;
 }
@@ -379,4 +388,71 @@ main .section3 .container .row .col-12 .accordion-item {
 }
 .Team .container h2::before {
   transform: translate(25px, 380%);
+}
+.container .row .team-member .member-info h4 {
+  margin-bottom: 5px;
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .row .team-member .member-info span {
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  line-height: 22.5px;
+}
+.container .row .team-member .member-info p {
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  line-height: 21px;
+}
+.container .row .team-member .member-info .social i {
+  font-size: 16spx;
+  font-weight: 400;
+  border-radius: 50px;
+  background-color: #f4f4f4;
+  padding: 7px 8px;
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.8);
+  margin: 0 2px;
+}
+.container .row .team-member .member-info .social i:hover {
+  background-color: rgb(71, 178, 228);
+  transition: 0.5s;
+  color: white;
+}
+.container .row .team-member .pic img {
+  height: 150px;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container .row .team-member {
+  padding: 30px;
+  box-shadow: 0px 5px 25px 0px #eaebec;
+  transition: 0.5s;
+}
+.container .row .team-member:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.container .row .team-member .member-info {
+  padding-left: 30px;
+}
+@media (max-width: 468px) {
+  .Team .Team-members .row .team-member {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .container .row .team-member .member-info {
+    padding-left: 0px;
+    margin-top: 20px;
+  }
 }

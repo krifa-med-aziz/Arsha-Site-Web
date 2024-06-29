@@ -108,6 +108,7 @@ main .section1 {
 /*--------------------------------------------------------------
 # Section2
 --------------------------------------------------------------*/
+.contact .container p,
 .FAQ .FAQ-title p,
 .Testimonials .container p,
 .Pricing .container p,
@@ -126,6 +127,7 @@ main .section1 {
 .section2 .container .row .col-12 p:nth-of-type(4) {
   line-height: normal;
 }
+.contact .container h2,
 .FAQ .FAQ-title h2,
 .Testimonials .container h2,
 .Pricing .container h2,
@@ -140,6 +142,7 @@ main .section1 {
   position: relative;
   padding-bottom: 5px;
 }
+.contact .container h2:after,
 .FAQ .FAQ-title h2:after,
 .Testimonials .container h2:after,
 .Pricing .container h2:after,
@@ -156,6 +159,7 @@ main .section1 {
   transform: translate(-160px, 10px);
   z-index: 1;
 }
+.contact .container h2:before,
 .FAQ .FAQ-title h2:before,
 .Testimonials .container h2:before,
 .Pricing .container h2:before,
@@ -692,4 +696,81 @@ main .section3 .container .row .col-12 .accordion-item {
     width: 40px;
     transform: translate(65px, 380%);
   }
+}
+/*--------------------------------------------------------------
+# contact Section
+--------------------------------------------------------------*/
+.contact .container h2:after {
+  width: 140px;
+  transform: translate(-125px, 10px);
+}
+.contact .container h2:before {
+  transform: translate(30px, 380%);
+}
+.contact .container .row .col-lg-5 .info-item h3 {
+  margin-bottom: 5px;
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact .container .row .col-lg-5 .info-item p {
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.contact .container .row .col-lg-5 .info-item i {
+  margin-right: 15px;
+  color: rgb(71, 178, 228);
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 11px;
+  background-color: color(srgb 0.278431 0.698039 0.894118 / 0.08);
+  transition: 0.4s;
+}
+.contact .container .row .col-lg-5 .info-item i:hover {
+  background-color: rgb(71, 178, 228);
+  color: white;
+  transition: 0.4s;
+}
+.contact .container .row .col-lg-5 .info,
+.contact .container .row .col-lg-7 form {
+  border-top: solid 3px rgb(71, 178, 228);
+  border-bottom: solid 3px rgb(71, 178, 228);
+  box-shadow: 0px 5px 25px 0px #eaebec;
+  padding: 30px;
+  height: 100%;
+}
+.contact .container .row .col-lg-7 form input {
+  padding: 10px 15px;
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact .container .row .col-lg-7 form label {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+.contact .container .row .col-lg-7 .row .col-12 button {
+  padding: 10px 30px;
+  background-color: rgb(71, 178, 228);
+  border-radius: 50px;
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+.contact .container .row .col-lg-7 .row .col-12 button:hover {
+  opacity: 0.7;
+  transition: 0.4s;
 }

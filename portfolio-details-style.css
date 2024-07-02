@@ -144,8 +144,8 @@ header .navbar {
   }
 }
 /*--------------------------------------------------------------
-  # Top footer Section
-  --------------------------------------------------------------*/
+    # Top footer Section
+    --------------------------------------------------------------*/
 .footer .top-footer .container .row .col-lg-4 a {
   text-decoration: none;
   color: rgb(55, 81, 126);
@@ -264,57 +264,57 @@ main .page-title .container .breadcrumb li a {
   }
 }
 /*--------------------------------------------------------------
-# page info Section
---------------------------------------------------------------*/
-main .page-info .container .row .col-lg-4 .service-list {
-  border: solid color(srgb 0.266667 0.266667 0.266667 / 0.1) 1px;
-  margin-bottom: 20px;
+    # main Section
+    --------------------------------------------------------------*/
+main .container .carousel-indicators {
+  margin-top: 20px;
+  transform: translateY(60px);
 }
-main .page-info .container .row .col-lg-4 .service-list a {
-  text-decoration: none;
-  padding: 8px 15px;
-  margin: 20px 0px;
-  border-left: solid 2.4px color(srgb 0.266667 0.266667 0.266667 / 0.3);
-  color: color(srgb 0.266667 0.266667 0.266667 / 0.8);
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+main .container .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
   font-size: 16px;
-  font-weight: 400;
-  transition: 0.3s;
+  background-color: rgb(71, 178, 228);
 }
-main .page-info .container .row .col-lg-4 .service-list .active {
-  color: rgb(55, 81, 126);
-  font-weight: 700;
-  border-left: solid 2.4px rgb(71, 178, 228);
+main .container .row .col-lg-4 .project-info {
+  background-color: white;
+  box-shadow: 0px 5px 25px 0px #eaebec;
 }
-main .page-info .container .row .col-lg-4 .service-list a:hover {
-  border-left: solid 2.4px rgb(71, 178, 228);
-  transition: 0.3s;
-}
-main .page-info .container .row .col-lg-8 h3,
-main .page-info .container .row .col-lg-4 h4 {
+main .container .row .col-lg-4 h2,
+main .container .row .col-lg-4 .project-info h3 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: rgb(55, 81, 126);
   font-family: "Jost", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 8px;
+  border-bottom: 0.8px solid color(srgb 0.266667 0.266667 0.266667 / 0.15);
 }
-main .page-info .container .row .col-lg-8 p,
-main .page-info .container .row .col-lg-4 p {
+main .container .row .col-lg-4 .project-info ul {
+  list-style: none;
+  padding-left: 0px;
+}
+main .container .row .col-lg-4 .project-info ul li {
   color: rgb(68, 68, 68);
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 16px;
-  line-height: 22.5px;
 }
-main .page-info .container .row .col-lg-8 h3 {
-  font-size: 26px;
-}
-main .page-info .container .row .col-lg-8 ul {
-  list-style: none;
-  padding-left: 0px;
-}
-main .page-info .container .row .col-lg-8 ul li i {
+main .container .row .col-lg-4 .project-info ul li a {
+  text-decoration: none;
   color: rgb(71, 178, 228);
-  font-size: 20px;
+}
+main .container .row .col-lg-4 h2 {
+  font-size: 26px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+main .container .row .col-lg-4 p {
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.7);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }

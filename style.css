@@ -5,11 +5,15 @@ main .landing-page {
   background-color: #37517e;
   color: white;
 }
+main .landing-page .container {
+  margin-top: 80px;
+}
 .container .row p:nth-of-type(1) {
   font-size: 48px;
   font-family: "Jost", sans-serif;
   font-weight: 700;
   line-height: 1.2;
+  margin-bottom: 5px;
 }
 .container .row p:nth-of-type(2) {
   font-size: 22px;
@@ -75,7 +79,7 @@ main .landing-page {
   color: rgba(0, 0, 0, 0.653);
 }
 main .landing-page .row .img {
-  animation: MoveUpDown 5s infinite;
+  animation: MoveUpDown 7s infinite;
 }
 
 @keyframes MoveUpDown {
@@ -83,7 +87,7 @@ main .landing-page .row .img {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
   100% {
     transform: translateY(0);

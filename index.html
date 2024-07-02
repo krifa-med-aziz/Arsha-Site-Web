@@ -36,7 +36,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg p-4">
+      <nav class="navbar navbar-expand-lg p-4 fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">ARSHA</a>
           <button
@@ -57,12 +57,12 @@
                   style="color: rgb(71, 178, 228)"
                   class="nav-link active"
                   aria-current="page"
-                  href="#"
+                  href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#" id="nav-about">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
@@ -101,7 +101,8 @@
             </ul>
             <form class="d-flex" role="search">
               <button
-                class="btn btn-primary rounded-pill ms-0 ms-lg-4 px-4"
+                class="btn btn-primary rounded-pill ms-0 ms-lg-4 px-4 get-started"
+                id="get-started"
                 type="submit"
               >
                 Get Started
@@ -146,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div class="section1">
+      <div class="section1 imgs">
         <div class="container" id="container2">
           <div class="row align-items-center justify-content-center py-4">
             <div class="col-6 col-sm-4 col-lg-2 text-center">
@@ -170,7 +171,7 @@
           </div>
         </div>
       </div>
-      <div class="section2">
+      <div class="section2 about us">
         <div class="container py-4">
           <h1 class="text-center my-5">ABOUT US</h1>
           <div class="row align-items-start justify-content-center pt-4">
@@ -1553,7 +1554,7 @@
                 </li>
                 <li>
                   <i class="bi bi-chevron-right me-1"></i
-                  ><a href="#">About us</a>
+                  ><a id="footer-about" href="#">About us</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right me-1"></i
@@ -1625,5 +1626,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="script/services-script.js"></script>
   </body>
 </html>

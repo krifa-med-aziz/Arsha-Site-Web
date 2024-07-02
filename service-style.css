@@ -1,0 +1,319 @@
+/*--------------------------------------------------------------
+  # navbar Section
+--------------------------------------------------------------*/
+header .navbar {
+  background-color: #37517e;
+}
+.container .row p:nth-of-type(1) {
+  font-size: 48px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.container .row p:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.705);
+  line-height: 1.2;
+}
+.navbar a {
+  color: rgba(255, 255, 255, 0.905);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.navbar .container .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.906);
+}
+.navbar ul li a:hover {
+  color: rgb(71, 178, 228);
+}
+.nabvar a:hover {
+  color: rgb(71, 178, 228);
+  transition: 0.3s;
+}
+.container .navbar-brand {
+  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.905);
+  font-size: 30px;
+  font-weight: 500;
+}
+.navbar .dropdown-menu li a {
+  color: rgba(0, 0, 0, 0.653);
+}
+.d-flex button {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(71, 178, 228);
+  font-weight: 400;
+  border-color: transparent;
+}
+.d-flex button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.d-flex button:active,
+.d-flex button:hover {
+  background-color: rgb(71, 178, 228) !important;
+  border-color: transparent !important;
+}
+.footer .footer-newsletter .container .row .col-lg-6 p {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  line-height: 24px;
+}
+.footer .footer-newsletter .container .row .col-lg-6 h4 {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+/*--------------------------------------------------------------
+# footer newsletter Section
+--------------------------------------------------------------*/
+.footer .footer-newsletter {
+  background-color: #f5f6f8;
+}
+.footer .footer-newsletter .container .row .col-lg-6 h4 {
+  font-size: 24px;
+}
+.footer .footer-newsletter .container .row .col-lg-6 form input:nth-of-type(1) {
+  padding: 7px 10px;
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 50px;
+  border-color: transparent;
+  box-shadow: 0px 5px 25px 0px #eaebec;
+  width: 75%;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s;
+}
+.footer
+  .footer-newsletter
+  .container
+  .row
+  .col-lg-6
+  form
+  input:nth-of-type(1):focus {
+  outline: none;
+  border-top: solid 1px rgb(71, 178, 228);
+  border-bottom: solid 1px rgb(71, 178, 228);
+  border-right: solid 1px rgb(71, 178, 228);
+  border-left: solid 1px rgb(71, 178, 228);
+  transition: 0.2s;
+}
+.footer .footer-newsletter .container .row .col-lg-6 form input:nth-of-type(2) {
+  padding: 7px 20px;
+  background-color: rgb(71, 178, 228);
+  color: white;
+  border-radius: 50px;
+  border-color: transparent;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s;
+  transform: translateX(-35px);
+  position: relative;
+  z-index: 3;
+}
+.footer
+  .footer-newsletter
+  .container
+  .row
+  .col-lg-6
+  form
+  input:nth-of-type(2):hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+@media (max-width: 506px) {
+  .footer
+    .footer-newsletter
+    .container
+    .row
+    .col-lg-6
+    form
+    input:nth-of-type(2) {
+    transform: translateX(0px);
+    margin-top: 10px;
+  }
+}
+/*--------------------------------------------------------------
+  # Top footer Section
+  --------------------------------------------------------------*/
+.footer .top-footer .container .row .col-lg-4 a {
+  text-decoration: none;
+  color: rgb(55, 81, 126);
+  margin-top: 24px;
+}
+.footer .top-footer .container .row .col-lg-4 a h3 {
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  font-size: 28px;
+}
+.footer .top-footer .container .row .col-lg-4 p {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+.footer .top-footer .container .row .col-lg-4 h4,
+.footer .top-footer .container .row .col-lg-2 h4 {
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .top-footer .container .row .col-lg-2 {
+  margin: 24px 0px 30px 0px;
+}
+.footer .top-footer .container .row .col-lg-2 ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer .top-footer .container .row .col-lg-2 ul li {
+  padding: 5px 0px;
+  color: rgb(68, 68, 68);
+}
+.footer .top-footer .container .row .col-lg-2 ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.3s;
+  color: oklab(0.386629 0.0000175834 0.0000077486 / 0.8);
+}
+.footer .top-footer .container .row .col-lg-2 ul li i {
+  color: rgb(71, 178, 228);
+  font-size: 12px;
+}
+.footer .top-footer .container .row .col-lg-2 ul li a:hover {
+  color: rgb(71, 178, 228);
+  transition: 0.3s;
+}
+.footer .top-footer .container .row .col-lg-4 .footer-social a {
+  margin-right: 10px;
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  border: solid 1px color(srgb 0.266667 0.266667 0.266667 / 0.8);
+  border-radius: 50%;
+  padding: 7px 10px;
+  transition: 0.3s;
+}
+.footer .top-footer .container .row .col-lg-4 .footer-social a:hover {
+  color: rgb(71, 178, 228);
+  border-color: rgb(71, 178, 228);
+  transition: 0.3s;
+}
+.footer .copyright .container {
+  padding: 25px 12px;
+  border-top: solid 0.8px color(srgb 0.266667 0.266667 0.266667 / 0.1);
+}
+.footer .copyright .container p {
+  margin-bottom: 0px;
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer .copyright .container p:nth-of-type(2) {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.footer .copyright .container p:nth-of-type(2) a {
+  color: rgb(71, 178, 228);
+  text-decoration: none;
+}
+/*--------------------------------------------------------------
+# page title Section
+--------------------------------------------------------------*/
+main .page-title h1 {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+main .page-title {
+  background-color: color(srgb 0.266667 0.266667 0.266667 / 0.04);
+  padding: 20px 0px;
+}
+main .page-title .container .breadcrumb li {
+  color: rgb(68, 68, 68);
+}
+main .page-title .container .breadcrumb li a {
+  text-decoration: none;
+  color: rgb(71, 178, 228);
+}
+@media (max-width: 506px) {
+  main .page-title h1 {
+    font-size: 20px;
+  }
+  main .page-title .container .breadcrumb {
+    font-size: 14px;
+  }
+}
+/*--------------------------------------------------------------
+# page info Section
+--------------------------------------------------------------*/
+main .page-info .container .row .col-lg-4 .service-list {
+  border: solid color(srgb 0.266667 0.266667 0.266667 / 0.1) 1px;
+  margin-bottom: 20px;
+}
+main .page-info .container .row .col-lg-4 .service-list a {
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 20px 0px;
+  border-left: solid 2.4px color(srgb 0.266667 0.266667 0.266667 / 0.3);
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.8);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+main .page-info .container .row .col-lg-4 .service-list .active {
+  color: rgb(55, 81, 126);
+  font-weight: 700;
+  border-left: solid 2.4px rgb(71, 178, 228);
+}
+main .page-info .container .row .col-lg-4 .service-list a:hover {
+  border-left: solid 2.4px rgb(71, 178, 228);
+  transition: 0.3s;
+}
+main .page-info .container .row .col-lg-8 h3,
+main .page-info .container .row .col-lg-4 h4 {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+main .page-info .container .row .col-lg-8 p,
+main .page-info .container .row .col-lg-4 p {
+  color: rgb(68, 68, 68);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  line-height: 22.5px;
+}
+main .page-info .container .row .col-lg-8 h3 {
+  font-size: 26px;
+}
+main .page-info .container .row .col-lg-8 ul {
+  list-style: none;
+  padding-left: 0px;
+}
+main .page-info .container .row .col-lg-8 ul li i {
+  color: rgb(71, 178, 228);
+  font-size: 20px;
+}

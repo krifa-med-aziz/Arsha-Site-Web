@@ -907,6 +907,18 @@ main .section3 .container .row .col-12 .accordion-item {
   opacity: 0.8;
   transition: 0.3s;
 }
+@media (max-width: 506px) {
+  .footer
+    .footer-newsletter
+    .container
+    .row
+    .col-lg-6
+    form
+    input:nth-of-type(2) {
+    transform: translateX(0px);
+    margin-top: 10px;
+  }
+}
 /*--------------------------------------------------------------
 # Top footer Section
 --------------------------------------------------------------*/

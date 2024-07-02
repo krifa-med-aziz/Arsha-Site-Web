@@ -408,6 +408,76 @@ main .section3 .container .row .col-12 .accordion-item {
   transform: translate(-180px, 10px);
   z-index: 1;
 }
+.portfolio .portfolio-button .row .col button {
+  margin-right: 5px;
+  padding: 5px 20px;
+  border-radius: 50px;
+  background-color: white;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(68, 68, 68);
+  transition: 0.3s;
+  border: none;
+}
+.portfolio .portfolio-button .row .col button:nth-of-type(1) {
+  background-color: rgb(71, 178, 228);
+  color: white;
+}
+.portfolio .portfolio-button .row .col button:hover {
+  background-color: rgb(71, 178, 228);
+  color: white;
+  transition: 0.3s;
+}
+.portfolio .portfolio-imgs .row .col-lg-4 .portfolio-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.portfolio .portfolio-imgs .row .col-lg-4 .portfolio-info h4 {
+  color: rgb(55, 81, 126);
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.portfolio .portfolio-imgs .row .col-lg-4 .portfolio-info p {
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.7);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.portfolio .portfolio-imgs .row .col-lg-4 .portfolio-info a {
+  color: color(srgb 0.266667 0.266667 0.266667 / 0.7);
+  font-size: 24px;
+  margin-left: 4px;
+  transition: 0.3s;
+}
+.portfolio .portfolio-imgs .row .col-lg-4 .portfolio-info a:hover {
+  color: rgb(71, 178, 228);
+  transition: 0.3s;
+}
+.portfolio .portfolio-imgs .row .col-lg-4 .img4,
+.portfolio .portfolio-imgs .row .col-lg-4 .img3,
+.portfolio .portfolio-imgs .row .col-lg-4 .img2,
+.portfolio .portfolio-imgs .row .col-lg-4 .img1 {
+  position: relative;
+  z-index: 1;
+}
+.portfolio .portfolio-imgs .row .col-lg-4 .img4:hover .portfolio-info,
+.portfolio .portfolio-imgs .row .col-lg-4 .img3:hover .portfolio-info,
+.portfolio .portfolio-imgs .row .col-lg-4 .img2:hover .portfolio-info,
+.portfolio .portfolio-imgs .row .col-lg-4 .img1:hover .portfolio-info {
+  visibility: visible;
+  transition: 0.2s;
+}
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/

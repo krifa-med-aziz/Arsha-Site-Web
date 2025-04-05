@@ -1,3 +1,6 @@
+body {
+  position: relative;
+}
 header .navbar {
   background-color: #37517e;
 }
@@ -424,9 +427,9 @@ main .section3 .container .row .col-12 .accordion-item {
   transition: 0.3s;
   border: none;
 }
-.portfolio .portfolio-button .row .col button:nth-of-type(1) {
-  background-color: rgb(71, 178, 228);
-  color: white;
+.portfolio__btn__clicked {
+  background-color: rgb(71, 178, 228) !important;
+  color: white !important;
 }
 .portfolio .portfolio-button .row .col button:hover {
   background-color: rgb(71, 178, 228);
@@ -1013,4 +1016,124 @@ main .section3 .container .row .col-12 .accordion-item {
 .footer .copyright .container p:nth-of-type(2) a {
   color: rgb(71, 178, 228);
   text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.ScrollUp {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(55, 81, 126);
+  transition: ease 0.3s, transform 0.3s ease, opacity ease 0.3s;
+}
+.ScrollUp.hide {
+  transform: translateY(80px);
+  opacity: 0;
+}
+.ScrollUp.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.scrollToTop {
+  position: absolute;
+  position: fixed;
+  z-index: 150;
+  height: 24px;
+  bottom: 60px;
+  right: 20px;
+}
+.scrollToTop button,
+.scrollToTop button:focus {
+  border: none;
+  background-color: transparent;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.getStartedPopUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 2rem 4rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1500;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: rgb(55, 81, 126);
+}
+
+.modal__form {
+  /* margin: 0 3rem; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem 1rem;
+}
+
+.modal__form label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.modal__form input {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  background-color: rgb(55, 81, 126);
+  color: white;
+  font-weight: 500;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.clicked {
+  color: rgb(71, 178, 228) !important;
 }

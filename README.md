@@ -1,6 +1,6 @@
 # Arsha Website
 
-Arsha is a responsive and modern website built with HTML, CSS, and Bootstrap. It features multiple sections such as services, portfolio, team, testimonials, and more, making it suitable for showcasing business or personal projects.
+Arsha is a responsive and modern website built with HTML, CSS, Bootstrap and JavaScript. It features multiple sections such as services, portfolio, team, testimonials, and more, making it suitable for showcasing business or personal projects.
 
 ## Features
 
